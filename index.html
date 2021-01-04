@@ -1,0 +1,162 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>JavaScript</title>
+	</head>
+	<style>
+	<img{
+		height: 200px;
+		width: 300px;
+	} 
+	</style>
+	<body>
+	<section style="text-align: center">
+
+
+	<h2 style="color: blue; background-color: white;">My First JavaScript</h2>
+	<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click me to display Date and Time.
+		
+	</button>
+	<p id="demo"></p>
+	<h2 style="color: blue; background-color: white;">JavaScript can change HTML content. </h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+	<h2  style="color: blue; background-color: white;">Js can change HTML attribute values</h2>
+
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='images/img1.jpg'">Turn on the light</button>
+
+    <img id="myImage" src="images/img.jpg" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='images/img.jpg'">Turn off the light</button>
+    <h2  style="color: blue; background-color: white;">JavaScript can show hidden HTML elements.</h2>
+
+    <p>JavaScript can show hidden HTML elements.</p>
+
+    <p id="demo" style="display:none">Hello JavaScript!</p>
+
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+    <h2  style="color: blue; background-color: white;">JavaScript Variables</h2>
+
+    <p>In this example, x, y, and z are variables.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    var x = 5;
+    var y = 6;
+    var z = x + y;
+    document.getElementById("demo").innerHTML =
+    "The value of z is: " + z;
+   </script>
+   <h2  style="color: blue; background-color: white;">The + Operator</h2>
+
+   <p id="demo"></p>
+
+   <script>
+   var x = 5;
+   var y = 2;
+   var z = x + y;
+   document.getElementById("demo").innerHTML = z;
+   </script>
+    <h2  style="color: blue; background-color: white;">JavaScript math</h2>
+   <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+
+   <p id="demo"></p>
+
+   <script>
+   var a = 3;
+   var x = (10 + 40) * a;
+   document.getElementById("demo").innerHTML = x;
+   </script>
+   <h2>The %= Operator</h2>
+
+   <p id="demo"></p>
+
+   <script>
+   var x = 10;
+   x %= 5;
+  document.getElementById("demo").innerHTML = x;
+  </script>
+    <h2  style="color: blue; background-color: white;">JavaScript condition</h2>
+  <p>Display "Good day!" if the hour is less than 18:00:</p>
+
+  <p id="demo">Good Evening!</p>
+
+ <script>
+ if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+ }
+ </script>
+ <h2  style="color: blue; background-color: white;">JavaScript switch</h2>
+                   <p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+  }
+  document.getElementById("demo").innerHTML = "Today is " + day;
+  </script>
+  <h2  style="color: blue; background-color: white;>JavaScript For Loop</h2>
+
+  <p id="demo"></p>
+
+  <script>
+  var text = "";
+  var i;
+  for (i = 0; i < 5; i++) {
+     text += "The number is " + i + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+  </script>
+
+  <h2 style="color: blue; background-color: white;>JavaScript Do/While Loop</h2>
+
+  <p id="demo"></p>
+
+  <script>
+  var text = ""
+  var i = 0;
+
+  do {
+    text += "<br>The number is " + i;
+    i++;
+  }
+  while (i < 10);  
+
+  document.getElementById("demo").innerHTML = text;
+  </script>
+
+
+  </section
+
+	
+	</body>
+	</html>
